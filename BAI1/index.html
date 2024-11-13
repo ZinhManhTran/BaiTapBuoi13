@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiểm tra kết quả tuyển sinh</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Kiểm tra kết quả tuyển sinh</h1>
+    <form id="tuyenSinhForm">
+      <label for="diemChuan">Điểm chuẩn:</label>
+      <input type="number" id="diemChuan" required />
+      <br />
+      <label for="diemMon1">Điểm môn 1:</label>
+      <input type="number" id="diemMon1" required />
+      <br />
+      <label for="diemMon2">Điểm môn 2:</label>
+      <input type="number2" id="diemMon2" required />
+      <br />
+      <label for="diemMon3">Điểm môn 3:</label>
+      <input type="number3" id="diemMon3" required />
+
+      <br />
+      <label for="khuVuc">Khu vực:</label>
+      <select id="khuVuc">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="X">Không thuộc khu vực ưu tiên</option>
+      </select>
+      <br />
+      <label for="doiTuong">Đối tượng:</label>
+      <select id="doiTuong">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="0">Không thuộc đối tượng ưu tiên</option>
+      </select>
+      <br />
+      <button type="button" onclick="kiemTra()">Kiểm tra</button>
+    </form>
+    <div id="ketQua"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
